@@ -32,16 +32,17 @@ const originalToy = {
 };
 const toyUpdate = { lights: "rgb", power: ["Volar like a dragon", "MoonWalk"] };
 
-const combinedToy = {...originalToy,...toyUpdate};
+const combinedToy = { ...originalToy, ...toyUpdate };
 
 console.log(combinedToy);
 
 //2.5
 
-const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
+const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
 
 const copiedColors = [...colors];
-copiedColors.splice(2,1);
+copiedColors.splice(2, 1);
 
-console.log(colors);
+//const copiedColors = [...colors.slice(0, 2), ...colors.slice(3)];
+
 console.log(copiedColors);
